@@ -1,0 +1,203 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@400;700&display=swap');
+
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Apply Modern Fonts */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0a0a0a;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Heading Styling */
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 8px;
+    color: #ffd700;
+}
+
+/* Gradient Text Effect */
+.gradient-text {
+    background: linear-gradient(135deg, #003366, #ffd700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Animated Text Shadow */
+h1:hover, h2:hover {
+    text-shadow: 4px 4px 15px rgba(255, 215, 0, 0.7);
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background: rgba(0, 51, 102, 0.95);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2);
+    border-bottom: 2px solid rgba(255, 215, 0, 0.5);
+}
+
+nav h1 {
+    font-size: 1.8rem;
+    color: #ffd700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: #ffd700;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+.section-container {
+    width: 85%;
+    margin: 70px auto;
+    padding: 120px 50px;
+    border-radius: 16px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background: rgba(0, 51, 102, 0.15);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.3);
+    border: 2px solid rgba(255, 215, 0, 0.2);
+}
+
+.section-container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(255, 215, 0, 0.5);
+}
+
+/* Button Styling */
+button {
+    background: linear-gradient(135deg, #003366, #ffd700);
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.7);
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.social-icons a {
+    font-size: 5rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    transform: scale(1.3);
+}
+
+.fa-instagram {
+    color: #E1306C;
+}
+
+.fa-linkedin {
+    color: #0077b5;
+}
+
+.fa-github {
+    color: #ffffff;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #003366, #001a33);
+    padding: 100px 0;
+}
+
+#home h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+#home p {
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+/* About Section */
+#about {
+    background: url('https://source.unsplash.com/1600x900/?technology,programming') no-repeat center center/cover;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    padding: 100px 0;
+}
+
+/* Projects Section */
+#projects {
+    padding: 250px 0;
+}
+
+#projects .gesture-project {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+/* Contact Section */
+#contact {
+    padding: 250px 0;
+}
